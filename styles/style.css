@@ -67,6 +67,7 @@ nav {
   .toggle:hover {
       background: #dfb305;
   }
+  /* что то непонятное надо узнать  */
   #checkbox-menu:checked + label .touch li {
       opacity: 1;
       visibility: visible;
