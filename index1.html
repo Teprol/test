@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html" charset="utf-8" />
+  <!--может не актуально уже-->
+  <meta name="keywords" content="ключевые слова" />
+  <meta name="description" content="сюда пишем описание страницы" />
+  <meta name="robots" content="index, follow" />
+  <!--Индексация и переход по ссылкам разрешены, иначе пишем "no" в начале:-->
+  <meta http-equiv="refresh" content="5" />
+  <!--перезагружает страницу через 5 мин-->
+  <meta lang="ru" />
+  <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+  <!--подключает таблицу стилей-->
+  <link rel="icon" href="fav.ico" type="image" />
+  <!--задает иконку в браузер-->
+  <!-- <link rel="icon" href="" type="image"> логотип маленький-->
+  <title>Мой первый проект</title>
+</head>
+
+<body>
+  <!-- создадим шапку -->
+  <header>
+    <!-- создадим навигацию меню -->
+    <nav>
+      <!-- кнопка с галкой -->
+      <input type="checkbox" id="checkbox-menu">
+      <!-- насчет лэйбла не очень понял чекай -->
+      <label for="checkbox-menu">
+        <!-- создаем марк. список с названиями меню -->
+        <ul class="menu touch">
+          <li><a class="logo" href="#">JuWeDe</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a class="contacts" href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+        </ul>
+        <span class="toggle">☰</span>
+      </label>
+    </nav>
+  </header>
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>

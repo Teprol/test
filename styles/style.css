@@ -1,0 +1,86 @@
+/* выбираем все элементы сбрасываем все отступы на ноль, подкл шрифт */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed" sans-serif;
+}
+body,
+html {
+  overflow-x: hidden; /*Отображается только область внутри элемента, остальное будет скрыто.*/
+}
+nav {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+/* выключаем видимость чекбокса и значка */
+#checkbox-menu,
+.toggle {
+  display: none;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row; /* задает расположение отрисовку элементов в данном случае с лев на прав */
+  justify-content: space-evenly; /* что то типо выравнивания элементов и расположения */
+  align-items: center; /* чек*/
+  list-style-type: none; /* убирает маркеры */
+}
+.menu li a {
+  color: black;
+  text-decoration: none; /*убираем подчеркивание*/
+  align-self: center; /*выравнивает флекс элементы по текущей линии*/
+  font-size: 13px;
+  padding: 10px 15px;
+  /* задает свойство трансформации с задержкой */
+  transition: background 0.2s linear;
+}
+/* создает эффект при наведении мышкой */
+.menu li a:hover {
+  background: #ffcc01;
+  border-radius: 3px;
+}
+/* отступ вправо от лого */
+.menu li a.logo {
+  font-size: 25px;
+  margin-right: 240px;
+}
+/* отступ вправо от контактов */
+.menu li a.contacts {
+  margin-right: 100px;
+}
+/* будет отображаться если ширина экрана меньше или равна 765 */
+@media screen and (max-width: 765px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    width: 100%;
+    color: black;
+    background: #ffcc01;
+    transition: all 0.1s linear;
+  }
+  .toggle:hover {
+      background: #dfb305;
+  }
+  #checkbox-menu:checked + label .touch li {
+      opacity: 1;
+      visibility: visible;
+      transition: all .7s linear;
+  }
+  #checkbox-menu:checked + label .touch {
+      height: 350px;
+  }
+  .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 0;
+      transition: height .3s linear;
+  }
+}
