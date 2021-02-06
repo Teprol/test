@@ -67,6 +67,9 @@ nav {
   .toggle:hover {
       background: #dfb305;
   }
+  .menu {
+    visibility: hidden;
+  }
   /* что то непонятное надо узнать  */
   #checkbox-menu:checked + label .touch li {
       opacity: 1;
@@ -76,12 +79,15 @@ nav {
   #checkbox-menu:checked + label .touch {
       height: 350px;
   }
-  .menu {
+  .menu  {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       height: 0;
       transition: height .3s linear;
+  }
+  .contacts {
+    margin: 100px;
   }
 }
